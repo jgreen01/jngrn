@@ -22,6 +22,4 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Express' }); // TODO create contact page content
 });
 
-/* Thought - what about a forum? */
-
 module.exports = router;

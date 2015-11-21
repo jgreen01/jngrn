@@ -16,7 +16,6 @@ var app = express();
 // stylus setup
 function compile(str, path) {
   return stylus(str)
-    .set('filename', path)
     .use(bootstrap());
 }
 
