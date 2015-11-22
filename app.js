@@ -1,4 +1,3 @@
-var bootstrap = require('bootstrap-styl');
 var stylus = require('stylus');
 
 var express = require('express');
@@ -12,17 +11,6 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-
-// stylus setup
-function compile(str, path) {
-  return stylus(str)
-    .use(bootstrap());
-}
-
-app.use(stylus.middleware({
-  src: __dirname + '/public',
-  compile: compile
-}));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
