@@ -6,8 +6,7 @@ var plumber = require('gulp-plumber');
 var imagemin = require('gulp-imagemin');
 var prefix = require('gulp-autoprefixer');
 var minifyCss = require('gulp-minify-css');
-var copy = require('copy');
-var mkdirp = require('mkdirp');
+var copy = require('recursive-copy');
 
 /** Source location **/
 var src_location = 'src/';
@@ -82,8 +81,13 @@ gulp.task('watch:all', function() {
 /***  Setup Tasks  ***/
 
 gulp.task('setup:styles', function() {
-  mkdirp('src/sass/flexboxgrid/', function (err) {
-    if (err) console.error(err);
+  copy('node_modules/flexboxgrid-sass/source/sass/', 'src/sass/flexboxgrid/', function(err) {
+    if (err) console.error('Copy failed: ' + err);
+    else console.info('Flexboxgrid is ready');
   });
-  copy('node_modules/flexboxgrid-sass/source/sass/*', 'src/sass/flexboxgrid/');
+
+  copy('node_modules/materialize-css/sass/', 'src/sass/materialize/', function(err) {
+    if (err) console.error('Copy failed: ' + err);
+    else console.info('Materialize is ready');
+  });
 });
