@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/node,vim
+# Created by https://www.gitignore.io/api/
 
 ### Node ###
 # Logs
@@ -39,3 +39,11 @@ Session.vim
 .netrwhist
 *~
 
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+### Compiled site content ###
+www
