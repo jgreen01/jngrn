@@ -2,10 +2,51 @@ doctype html
 html
 	head
 		title jngrn.co
-		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css")
+		link(rel="stylesheet" href="css/style.css")
 		link(rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js" async)
-		script(src="js/index.js")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css")
 
 	body
-		h1 Hello Jon Green
+		header
+			nav.light-blue
+				.container
+					.nav-wrapper
+						a(href="#!").brand-logo.center JG
+						a(href="#" data-activates="mobile-demo").button-collapse
+							i.mdi-navigation-menu
+						ul#nav-mobile.right.hide-on-med-and-down
+							li
+								a(href="#blog") Blog
+							li
+								a(href="#projects") Projects
+							li
+								a(href="#about") About
+							li
+								a(href="#contact") Contact
+						ul#mobile-demo.side-nav
+							li
+								a(href="#blog") Blog
+							li
+								a(href="#projects") Projects
+							li
+								a(href="#about") About
+							li
+								a(href="#contact") Contact
+		main
+			.container
+				.row.center-xs
+					.col-xs-6
+						.box
+							h1 Hello Jon Green
+
+		footer.page-footer.light-blue
+			.container
+				.row
+			.footer-copyright
+				.container
+					&copy 2016 Jon Green
+					a(href="#contact").grey-text.text-lighten-4.right Contact
+
+		script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js")
+		script(src="js/index.js")
