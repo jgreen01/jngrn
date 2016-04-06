@@ -1,2 +1,8 @@
 rnd thoughts:
 	- what about a forum?
+
+create pages
+	- blog
+	- projects
+	- about
+	- contact
