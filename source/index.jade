@@ -1,3 +1,13 @@
+mixin menu-list
+	li
+		a(href="http://blog.jngrn.co/") Blog
+	li
+		a(href="https://github.com/jgreen82") Projects
+	li
+		a(href="https://www.linkedin.com/in/jonathong") About
+	li
+		a.email-me Contact
+
 doctype html
 html
 	head
@@ -15,23 +25,11 @@ html
 						a(href="#" data-activates="mobile-demo").button-collapse
 							i.mdi-navigation-menu
 						ul#nav-mobile.right.hide-on-med-and-down
-							li
-								a(href="#blog") Blog
-							li
-								a(href="#projects") Projects
-							li
-								a(href="#about") About
-							li
-								a(href="#contact") Contact
+							+menu-list
+
 						ul#mobile-demo.side-nav
-							li
-								a(href="#blog") Blog
-							li
-								a(href="#projects") Projects
-							li
-								a(href="#about") About
-							li
-								a(href="#contact") Contact
+							+menu-list
+
 		main
 			.container
 				.row.center-xs
@@ -45,7 +43,8 @@ html
 			.footer-copyright
 				.container
 					&copy 2016 Jon Green
-					a(href="#contact").grey-text.text-lighten-4.right Contact
+					a.email-me.grey-text.text-lighten-4.right.offset-s4 Email me
+					a.call-me.grey-text.text-lighten-4.center Call me
 
 		script(src="https://code.jquery.com/jquery-2.2.0.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js")

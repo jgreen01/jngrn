@@ -37,7 +37,7 @@ gulp.task('scripts', function() {
 			.pipe(plumber())
 			.pipe(jshint())
 			.pipe(jshint.reporter())
-			.pipe(uglify())
+//			.pipe(uglify())
 			.pipe(gulp.dest(jscripts_dest))
 			.pipe(connect.reload());
 });
