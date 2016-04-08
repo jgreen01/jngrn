@@ -15,6 +15,7 @@ html
 		link(rel="stylesheet" href="css/style.css")
 		link(rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css")
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
 
 	body
 		header
@@ -42,9 +43,14 @@ html
 				.row
 			.footer-copyright
 				.container
-					&copy 2016 Jon Green
-					a.email-me.grey-text.text-lighten-4.right.offset-s4 Email me
-					a.call-me.grey-text.text-lighten-4.center Call me
+					.row
+						.col-xs-5 &copy 2016 Jon Green
+						.container.col-xs-7
+							.row.right-xs.bottom-xs
+								a.email-me.waves-effect.waves-light.btn.col-xs-5
+									i.tiny.material-icons email
+								a.call-me.waves-effect.waves-light.btn.col-xs-5.col-xs-offset-2
+									i.tiny.material-icons phone
 
 		script(src="https://code.jquery.com/jquery-2.2.0.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js")
