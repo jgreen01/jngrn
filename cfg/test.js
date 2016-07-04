@@ -54,5 +54,12 @@ module.exports = {
     new BowerWebpackPlugin({
       searchResolveModulesDirectories: false
     })
-  ]
+  ],
+  externals: {
+    'react/addons': true,
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true,
+    jsdom: 'window',
+    cheerio: 'window'
+  }
 };
