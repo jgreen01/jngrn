@@ -12,6 +12,8 @@ store.subscribe(() => {
   console.log(store.getState());
 });
 
+require('sass/App.scss');
+
 export default React => ({ foo, ...props }) => {
   const Title = createTitle(React);
   const Hello = createHello(React);
