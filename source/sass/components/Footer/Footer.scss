@@ -1,0 +1,27 @@
+@import '../../palette.scss';
+
+.footer-component {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: $text-color;
+  background-color: $accent-color;
+  padding: 2rem;
+
+  a {
+    text-decoration: none;
+    color: $link-color;
+  }
+}
+
+.footer-plug {
+  display: flex;
+
+  & > * {
+    margin-right: 2rem;
+  }
+}
+
+.home-link {
+  margin-left: 2rem;
+}

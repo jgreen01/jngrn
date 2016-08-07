@@ -1,3 +1,12 @@
+@import 'palette.scss';
+
+.page-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .content {
-	background-color: blue;
+  flex: 1;
+  background-color: $bg-color;
 }
