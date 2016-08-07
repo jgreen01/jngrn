@@ -1,34 +1,18 @@
-import createTitle from 'components/title';
-import createHello from 'components/hello';
-import { createStore } from 'redux';
-
-import hello from 'store/reducers/hello';
-
-const store = createStore(hello);
-
-const setMode = (mode) => store.dispatch({ type: 'SET_MODE', mode });
-
-store.subscribe(() => {
-  console.log(store.getState());
-});
+import createNavBar from 'components/NavBar';
+import createFooter from 'components/Footer';
 
 require('sass/App.scss');
 
-export default React => ({ foo, ...props }) => {
-  const Title = createTitle(React);
-  const Hello = createHello(React);
-  const helloProps = {
-    ...props,
-    actions: {
-      setMode
-    }
-  };
+export default React => () => {
+  const Footer = createFooter(React);
+  const NavBar = createNavBar(React);
 
   return (
-    <div className="content">
-      <Title { ...props } />
-      <Hello { ...helloProps } />
-      <p>Content goes here: { foo }</p>
+    <div className="page-container">
+      <NavBar />
+      <div className="content">
+      </div>
+      <Footer />
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import React from 'react';
 import reactDom from 'react-dom/server';
 import test from 'tape';
-import dom from 'cheerio';
+
+import { shallowRender } from enzyme;
 
 import createApp from 'App.js';
 import createActions from 'test-fixtures/components/hello/create-actions';
@@ -13,11 +14,6 @@ test('Hello', assert => {
   const msg = 'Should render all sections.';
 
   const props = {
-    foo: 'foo',
-    helloClass: 'hello',
-    titleClass: 'title',
-    title: 'Yay!',
-    actions: createActions()
   };
 
   const el = <App{ ...props } />;

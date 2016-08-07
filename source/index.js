@@ -2,15 +2,11 @@ import React from 'react';
 import { render } from 'react-dom';
 import createApp from './App';
 
+require('sass/index.scss');
+
 const App = createApp(React);
 
-const props = {
-  foo: 'yay!  🎸🎶',
-  title: 'Pure Components Rock',
-  helloClass: 'hello'
-};
-
 render(
-  <App { ...props }></App>,
+  <App />,
   document.getElementById('root')
 );
