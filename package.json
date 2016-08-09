@@ -63,9 +63,10 @@
     "webpack-dev-middleware": "1.6.1"
   },
   "dependencies": {
+    "express": "4.13.4",
     "react": "15.0.1",
-    "redux": "3.5.2",
+    "react-burger-menu": "^1.10.2",
     "react-dom": "15.0.1",
-    "express": "4.13.4"
+    "redux": "3.5.2"
   }
 }

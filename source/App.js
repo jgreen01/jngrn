@@ -8,7 +8,7 @@ export default React => () => {
   const NavBar = createNavBar(React);
 
   return (
-    <div className="page-container">
+    <div id="page-container">
       <NavBar />
       <div className="content">
       </div>
