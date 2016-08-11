@@ -37,9 +37,14 @@ module.exports = {
       }
     },
 		{
-		  test: /\.scss$/,
-		  loaders: ['style', 'css', 'sass'],
-		  include: path.join(__dirname, 'source/sass')
+      test: /\.scss$/,
+      loaders: ['style', 'css', 'sass'],
+      include: path.join(__dirname, 'source/sass')
+		},
+		{
+      test: /\.svg$/,
+      loaders: ['file'],
+      include: path.join(__dirname, 'source/images')
 		}]
   }
 };
