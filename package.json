@@ -4,8 +4,12 @@
   "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
   "scripts": {
     "clean": "rimraf build",
+    "build:webpack:dev": "webpack --config webpack.config.dev.js",
     "build:webpack": "webpack --config webpack.config.prod.js",
+    "build:dev": "npm run clean && npm run build:webpack:dev",
     "build": "npm run clean && npm run build:webpack",
+    "build:start:dev": "npm run build:dev && npm run start:dev",
+    "start:dev": "HOST='0.0.0.0' npm run start",
     "start": "NODE_PATH='source' node devServer.js",
     "debug": "NODE_PATH='source' echo 'Nothing? `npm install -g iron-node`' && iron-node source/debug.js",
     "lint": "eslint source",
