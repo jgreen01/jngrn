@@ -1,4 +1,4 @@
-require('sass/components/Footer/Footer.scss');
+require('sass/components/Footer/index.scss');
 
 export default React => () => (
   <div className="footer-component">

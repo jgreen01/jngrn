@@ -1,13 +1,13 @@
 @import '../../palette.scss';
 
-.navbar-component {
+.header-component {
   padding: 0.5rem 2rem;
   text-align: center;
-  background-color: $accent-color;
+  background-color: $woodsmoke-black;
   box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.48);
 }
 
-.navbar-title {
+.header-title {
   font-size: 5rem;
-  color: $text-color;
+  color: $pure-white;
 }

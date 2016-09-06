@@ -6,7 +6,7 @@ import BurgerMenu from 'react-burger-menu';
 
 require('sass/index.scss');
 
-const menuIcon = require('images/menu.svg');
+// const menuIcon = require('images/menu.svg'); worry about this later
 
 const Menu = BurgerMenu.pushRotate;
 
@@ -14,13 +14,13 @@ const Page = createApp(React);
 
 render(
   <div id="outter-container">
-    <Menu
+    {/* <Menu
       pageWrapId="page-container"
       outerContainerId="outer-container"
       customBurgerIcon={ <img src={menuIcon} /> }
       >
       <h1> testing </h1>
-    </Menu>
+    </Menu> */}
     <Page />
   </div>,
   document.getElementById('root')
