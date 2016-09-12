@@ -3,25 +3,28 @@
 .footer-component {
   display: flex;
   justify-content: space-between;
-  font-size: 1.4rem;
-  color: $pure-white;
-  background-color: $cape-cod-gray;
-  padding: 2rem;
+  flex-direction: column;
 
-  a {
-    text-decoration: none;
-    color: $pure-white;
-  }
+  background-color: $cape-cod-gray;
 }
 
 .footer-plug {
   display: flex;
 
-  & > * {
-    margin-right: 2rem;
+  .footer-plug-link {
+    color: $pure-white;
   }
 }
 
-.home-link {
-  margin-left: 2rem;
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+
+  background-color: $tuna-gray;
+  color: #c0c0c0;  // TODO get color from psd
+
+  .footer-copyright-text {
+    padding: .6rem 0;
+    font-size: 1.2rem;
+  }
 }

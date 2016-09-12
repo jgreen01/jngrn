@@ -1,0 +1,14 @@
+@import '../../palette.scss';
+
+.circledicon-component {
+    display: flex;
+    width: 5em;
+    height: 5em;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.circledicon-icon {
+    margin: auto;
+    font-size: 1.4em;
+}
