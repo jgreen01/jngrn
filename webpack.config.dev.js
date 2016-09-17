@@ -22,15 +22,24 @@ module.exports = {
         presets: ['es2015', 'stage-0', 'react']
       }
     },
-		{
+    {
       test: /\.scss$/,
       loaders: ['style', 'css', 'sass'],
       include: path.join(__dirname, 'source/sass')
-		},
-		{
+    },
+    {
       test: /\.svg$/,
-      loaders: ['file'],
+      loaders: ['raw-loader', 'svgo-loader?useConfig=svgoConfig'],
       include: path.join(__dirname, 'source/images')
-		}]
+    }]
+  },
+  svgoConfig: {
+    plugins: [
+      { removeTitle: true },
+      { convertColors: { shorthex: false } },
+      { convertPathData: false },
+      { removeDimensions: true },
+      { addClassesToSVGElement: { className: 'svg-img' } }
+    ]
   }
 };
