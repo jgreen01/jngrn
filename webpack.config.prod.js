@@ -52,6 +52,7 @@ module.exports = {
       { removeTitle: true },
       { convertColors: { shorthex: false } },
       { convertPathData: false },
+      { removeDimensions: true },
       { addClassesToSVGElement: { className: 'svg-img' } }
     ]
   }
