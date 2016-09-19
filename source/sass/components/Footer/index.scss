@@ -2,6 +2,7 @@
 
 $footer-background: $cape-cod-gray;
 $footer-content: $pure-white;
+$footer-links: #c0c0c0;
 
 .footer-component {
   display: flex;
@@ -13,15 +14,35 @@ $footer-content: $pure-white;
 
 .footer-plug {
   display: flex;
+  flex-direction: column;
+}
 
-  .footer-plug-link {
-    color: $pure-white;
-    .svg-foreground {
-      fill: $footer-content;
-    }
-    .svg-background {
-      fill: $footer-background;
-    }
+.footer-head {
+  display: flex;
+  flex-direction: column;
+  color: $footer-content;
+  text-align: center;
+  
+  & > * {
+    margin-top: 1rem;
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.1rem 0;
+}
+
+.footer-plug-link {
+  color: $pure-white;
+  font-size: 0.7rem;
+  
+  .svg-foreground {
+    fill: $footer-links;
+  }
+  .svg-background {
+    fill: $footer-background;
   }
 }
 
