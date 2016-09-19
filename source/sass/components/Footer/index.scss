@@ -1,11 +1,14 @@
 @import '../../palette.scss';
 
+$footer-background: $cape-cod-gray;
+$footer-content: $pure-white;
+
 .footer-component {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 
-  background-color: $cape-cod-gray;
+  background-color: $footer-background;
 }
 
 .footer-plug {
@@ -13,6 +16,12 @@
 
   .footer-plug-link {
     color: $pure-white;
+    .svg-foreground {
+      fill: $footer-content;
+    }
+    .svg-background {
+      fill: $footer-background;
+    }
   }
 }
 

@@ -14,28 +14,17 @@ export default React => () => {
         <a className="footer-plug-link"
           href="https://github.com/jgreen82"
         >
-          <CircledIcon>
-            <div className="gh-svg"
-              dangerouslySetInnerHTML={ { __html: gitHubIcon } }
-            />
-          </CircledIcon>
+          <CircledIcon svg={ gitHubIcon } />
         </a>
         <a className="footer-plug-link"
           href="https://www.linkedin.com/in/jonathong"
         >
-          <CircledIcon>
-            <div className='in-svg'
-              dangerouslySetInnerHTML={ { __html: linkedinIcon } }
-            />
-          </CircledIcon>
+          <CircledIcon svg={ linkedinIcon } />
         </a>
         <a className="footer-plug-link"
+          href="https://medium.com/@jgreen539"
         >
-          <CircledIcon>
-            <div className='m-svg'
-              dangerouslySetInnerHTML={ { __html: mediumIcon } }
-            />
-          </CircledIcon>
+          <CircledIcon svg={ mediumIcon } />
         </a>
       </div>
       <div className="footer-copyright">
