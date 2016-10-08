@@ -11,24 +11,28 @@ export default React => () => {
   return (
     <div className="footer-component">
       <div className="footer-plug">
-        <a className="footer-plug-link"
-          href="https://github.com/jgreen82"
-        >
-          <CircledIcon svg={ gitHubIcon } />
-        </a>
-        <a className="footer-plug-link"
-          href="https://www.linkedin.com/in/jonathong"
-        >
-          <CircledIcon svg={ linkedinIcon } />
-        </a>
-        <a className="footer-plug-link"
-          href="https://medium.com/@jgreen539"
-        >
-          <CircledIcon svg={ mediumIcon } />
-        </a>
+        <div className="footer-links">
+          <a className="footer-link"
+            href="https://github.com/jgreen82"
+          >
+            <CircledIcon svg={ gitHubIcon } />
+          </a>
+          <a className="footer-link"
+            href="https://www.linkedin.com/in/jonathong"
+          >
+            <CircledIcon svg={ linkedinIcon } />
+          </a>
+          <a className="footer-link"
+            href="https://medium.com/@jgreen539"
+          >
+            <CircledIcon svg={ mediumIcon } />
+          </a>
+        </div>
       </div>
       <div className="footer-copyright">
-        <span className="footer-copyright-text">Handcrafted with Love. &copy; Jon Green</span>
+        <span className="footer-copyright-msg">
+          Solving hard problems elegantly. &copy; Jon Green
+        </span>
       </div>
     </div>
   );

@@ -1,39 +1,55 @@
 @import '../../palette.scss';
 
-$footer-background: $cape-cod-gray;
-$footer-content: $pure-white;
+$color-footer-bg: $cape-cod-gray;
+$color-footer-links: $pure-white;
 
 .footer-component {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 
-  background-color: $footer-background;
+  background-color: $color-footer-bg;
 }
 
 .footer-plug {
   display: flex;
+  flex-direction: column;
+}
 
-  .footer-plug-link {
-    color: $pure-white;
-    .svg-foreground {
-      fill: $footer-content;
-    }
-    .svg-background {
-      fill: $footer-background;
-    }
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.1rem 0;
+}
+
+.footer-link {
+  color: $color-footer-links;
+  font-size: 0.7rem;
+  
+  .svg-foreground {
+    fill: $color-footer-links;
+  }
+  .svg-background {
+    fill: $color-footer-bg;
   }
 }
 
 .footer-copyright {
   display: flex;
   justify-content: center;
+  text-align: center;
+  padding: .3rem 0;
 
   background-color: $tuna-gray;
-  color: #c0c0c0;  // TODO get color from psd
+  color: $cococo-gray;
+}
 
-  .footer-copyright-text {
-    padding: .6rem 0;
-    font-size: 1.2rem;
+@media (min-width: 600px) {
+  .footer-links {
+    justify-content: center;
+  }
+
+  .footer-link {
+    margin: 0 2rem;
   }
 }
