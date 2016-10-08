@@ -17,24 +17,13 @@ $footer-links: #c0c0c0;
   flex-direction: column;
 }
 
-.footer-head {
-  display: flex;
-  flex-direction: column;
-  color: $footer-content;
-  text-align: center;
-  
-  & > * {
-    margin-top: 1rem;
-  }
-}
-
 .footer-links {
   display: flex;
   justify-content: space-around;
   margin: 1.1rem 0;
 }
 
-.footer-plug-link {
+.footer-link {
   color: $pure-white;
   font-size: 0.7rem;
   
@@ -49,12 +38,20 @@ $footer-links: #c0c0c0;
 .footer-copyright {
   display: flex;
   justify-content: center;
+  text-align: center;
+  padding: .6rem 0;
+  font-size: 1.2rem;
 
   background-color: $tuna-gray;
-  color: #c0c0c0;  // TODO get color from psd
+  color: $cococo-gray;
+}
 
-  .footer-copyright-text {
-    padding: .6rem 0;
-    font-size: 1.2rem;
+@media (min-width: 600px) {
+  .footer-links {
+    justify-content: center;
+  }
+
+  .footer-link {
+    margin: 0 2rem;
   }
 }
