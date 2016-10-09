@@ -6,7 +6,7 @@ export default React => () => {
   const Footer = createFooter(React);
 
   return (
-    <div id="page-container">
+    <div className="page-container">
       <div className="content">
         <div className="page-message">
           <div className="page-question">Why climb Mount Everest?</div>
