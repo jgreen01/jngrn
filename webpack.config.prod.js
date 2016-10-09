@@ -45,6 +45,11 @@ module.exports = {
       test: /\.svg$/,
       loaders: ['raw-loader', 'svgo-loader?useConfig=svgoConfig'],
       include: path.join(__dirname, 'source/images')
+    },
+    {
+      test: /\.(jpg|png)$/,
+      loader: 'file?name=[path][name].[hash].[ext]',
+      include: path.join(__dirname, 'source/images')
     }]
   },
   svgoConfig: {
