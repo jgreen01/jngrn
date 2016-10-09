@@ -10,9 +10,9 @@ module.exports = {
     './source/index'
   ],
   output: {
-    path: path.join(__dirname, 'build'),
+    path: path.join(__dirname, 'static'),
     filename: 'index.js',
-    publicPath: '/static/'
+    publicPath: './static/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
@@ -44,6 +44,11 @@ module.exports = {
     {
       test: /\.svg$/,
       loaders: ['raw-loader', 'svgo-loader?useConfig=svgoConfig'],
+      include: path.join(__dirname, 'source/images')
+    },
+    {
+      test: /\.(jpe?g|png)$/,
+      loader: 'file?name=[path][name].[hash].[ext]',
       include: path.join(__dirname, 'source/images')
     }]
   },

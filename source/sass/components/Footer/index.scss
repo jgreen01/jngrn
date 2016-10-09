@@ -1,14 +1,11 @@
 @import '../../palette.scss';
 
-$color-footer-bg: $cape-cod-gray;
 $color-footer-links: $pure-white;
 
 .footer-component {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
-  background-color: $color-footer-bg;
 }
 
 .footer-plug {
@@ -30,7 +27,7 @@ $color-footer-links: $pure-white;
     fill: $color-footer-links;
   }
   .svg-background {
-    fill: $color-footer-bg;
+    fill: $cape-cod-gray;
   }
 }
 
@@ -39,9 +36,8 @@ $color-footer-links: $pure-white;
   justify-content: center;
   text-align: center;
   padding: .3rem 0;
-
-  background-color: $tuna-gray;
-  color: $cococo-gray;
+  color: $pure-white;
+  text-shadow: 0.1rem 0.1rem #000;
 }
 
 @media (min-width: 600px) {
