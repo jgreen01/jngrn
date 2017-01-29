@@ -1,6 +1,6 @@
 import createCircledIcon from '../shared/CircledIcon';
 
-require('sass/components/Footer/index.scss');
+require('sass/components/shared/Footer.scss');
 
 const gitHubIcon = require('../../images/github.svg');
 const linkedinIcon = require('../../images/linkedin.svg');

@@ -34,7 +34,7 @@ module.exports = {
     },
     {
       test: /\.(jpg|png)$/,
-      loader: 'file?name=[path][name].[hash].[ext]',
+      loader: 'file?name=[path][hash].[ext]',
       include: path.join(__dirname, 'source/images')
     }]
   },

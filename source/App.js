@@ -1,4 +1,4 @@
-import createFooter from 'components/Footer';
+import createFooter from 'components/shared/Footer';
 
 require('sass/App.scss');
 

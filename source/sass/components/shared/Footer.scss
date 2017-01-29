@@ -1,4 +1,4 @@
-@import '../../palette.scss';
+@import '../../../palette.scss';
 
 $color-footer-links: $pure-white;
 
@@ -22,10 +22,11 @@ $color-footer-links: $pure-white;
 .footer-link {
   color: $color-footer-links;
   font-size: 0.7rem;
-  
+
   .svg-foreground {
     fill: $color-footer-links;
   }
+
   .svg-background {
     fill: $cape-cod-gray;
   }
